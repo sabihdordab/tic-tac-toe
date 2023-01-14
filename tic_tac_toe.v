@@ -35,6 +35,7 @@ if ({memory[1] , memory[2] , memory[3]} == {2'b01 , 2'b01 , 2'b01} ||
 {memory[1] , memory[4] , memory[7]} == {2'b01 , 2'b01 , 2'b01} ||
 {memory[2] , memory[5] , memory[8]} == {2'b01 , 2'b01 , 2'b01} ||
 {memory[3] , memory[6] , memory[9]} == {2'b01 , 2'b01 , 2'b01} ||
+{memory[3] , memory[5] , memory[7]} == {2'b01 , 2'b01 , 2'b01} ||
 {memory[1] , memory[5] , memory[9]} == {2'b01 , 2'b01 , 2'b01}) begin
 state = init;
 temp = x_turn;
@@ -61,6 +62,7 @@ if ({memory[1] , memory[2] , memory[3]} == {2'b10 , 2'b10 , 2'b10} ||
 {memory[1] , memory[4] , memory[7]} == {2'b10 , 2'b10 , 2'b10} ||
 {memory[2] , memory[5] , memory[8]} == {2'b10 , 2'b10 , 2'b10} ||
 {memory[3] , memory[6] , memory[9]} == {2'b10 , 2'b10 , 2'b10} ||
+{memory[3] , memory[5] , memory[7]} == {2'b10 , 2'b10 , 2'b10} ||
 {memory[1] , memory[5] , memory[9]} == {2'b10 , 2'b10 , 2'b10}) begin
 state = init;
 temp = o_turn;
